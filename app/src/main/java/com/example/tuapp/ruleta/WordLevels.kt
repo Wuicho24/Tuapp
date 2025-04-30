@@ -11,7 +11,7 @@ val niveles = listOf(
     WordLevel(
         id = "Nivel ma",
         clave = "ma",
-        opciones = listOf("nzana", "ma", "riposa", "dera", "estro", "ti", "leta", "no", "sa", "ngo", "yo", "pa", "mapo"),
+        opciones = listOf("nzana", "má", "riposa", "dera", "estro", "ti", "leta", "no", "sa", "ngo", "to", "pa", "mapo"),
         correctas = listOf("manzana", "mamá", "mariposa", "madera", "maestro", "maleta", "mano", "mesa", "mango", "mapa")
     ),
     WordLevel(

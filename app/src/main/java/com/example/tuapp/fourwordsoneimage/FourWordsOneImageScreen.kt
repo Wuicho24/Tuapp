@@ -47,6 +47,7 @@ fun FourWordsOneImageScreen(
     var tts by remember { mutableStateOf<TextToSpeech?>(null) }
     var isTtsReady by remember { mutableStateOf(false) }
 
+    //Sonido text-audio
     LaunchedEffect(Unit) {
         tts = TextToSpeech(context) { status ->
             if (status == TextToSpeech.SUCCESS) {
@@ -55,15 +56,11 @@ fun FourWordsOneImageScreen(
             }
         }
     }
-
-
     DisposableEffect(Unit) {
         onDispose {
             tts?.shutdown()
         }
     }
-
-
 
     DisposableEffect(Unit) {
         onDispose {
@@ -73,7 +70,7 @@ fun FourWordsOneImageScreen(
         }
     }
 
-    // Vibrador
+    // Vibrator
     fun vibrate(context: Context) {
         val vibrator = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             val vm = context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
@@ -131,18 +128,6 @@ fun FourWordsOneImageScreen(
             shape = RoundedCornerShape(16.dp)
         )
     }
-
-    /*AlertDialog(
-        onDismissRequest = { showIntroDialog = false },
-        title = { Text(text = "¿Cómo jugar?") },
-        text = { Text("Observa la imagen y selecciona la palabra que se escriba correctamente. ¡Buena suerte!") },
-        confirmButton = {
-            Button(onClick = { showIntroDialog = false }) {
-                Text("¡Entendido!")
-            }
-        }
-    )*/
-
 
     if (isGameFinished) {
         AlertDialog(

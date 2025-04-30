@@ -50,12 +50,5 @@ fun AppNavigation() {
         composable("juego_4palabras") {
             FourWordsOneImageScreen(navController)
         }
-
-
-
-
-
-        // composable("modo_avanzado") { ... }
-        // composable("desafio_diario") { ... }
     }
 }

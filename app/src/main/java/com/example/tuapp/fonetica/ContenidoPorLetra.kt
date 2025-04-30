@@ -6,11 +6,11 @@ val contenidoPorLetra = mapOf(
     "A" to LetraContenido(
         imagenes = listOf(
             R.drawable.abanico,
-            R.drawable.agua,      // 0
-            R.drawable.almohada,    // 1
-            R.drawable.anillo,     // 2
-            R.drawable.avion,       // 3
-            R.drawable.a          // 4 ← Imagen fija
+            R.drawable.agua,      // 1
+            R.drawable.almohada,    // 2
+            R.drawable.anillo,     // 3
+            R.drawable.avion,       // 4
+            R.drawable.a          // 5← Imagen fija
         ),
         audios = listOf(
             R.raw.abanico,
@@ -18,7 +18,7 @@ val contenidoPorLetra = mapOf(
             R.raw.almohada,
             R.raw.anillo,
             R.raw.avion,
-            R.raw.a               // 4 ← Audio fijo
+            R.raw.a               // 5 ← Audio fijo
         )
     ),
     "B" to LetraContenido(
