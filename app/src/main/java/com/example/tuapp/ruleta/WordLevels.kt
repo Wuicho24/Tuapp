@@ -11,8 +11,8 @@ val niveles = listOf(
     WordLevel(
         id = "Nivel ma",
         clave = "ma",
-        opciones = listOf("nzana", "má", "riposa", "dera", "estro", "ti", "leta", "no", "sa", "ngo", "to", "pa", "mapo"),
-        correctas = listOf("manzana", "mamá", "mariposa", "madera", "maestro", "maleta", "mano", "mesa", "mango", "mapa")
+        opciones = listOf("nzana", "má", "riposa", "dera", "estro", "ti", "leta", "no", "ngo", "to", "pa", "po"),
+        correctas = listOf("manzana", "mamá", "mariposa", "madera", "maestro", "maleta", "mano", "mango", "mapa")
     ),
     WordLevel(
         id = "Nivel re",
@@ -23,7 +23,7 @@ val niveles = listOf(
     WordLevel(
         id = "Nivel pa",
         clave = "pa",
-        opciones = listOf("pel", "dre", "red", "tio", "loma", "ís", "la", "lmera", "leta", "lo", "cífico", "tria", "nal"),
+        opciones = listOf("pel", "dre", "red", "tio", "loma", "ís", "la", "lmera", "leta", "lo", "paro", "rco", "mal"),
         correctas = listOf("papel", "padre", "pared", "patio", "paloma", "país", "pala", "palmera", "paleta", "palo")
     ),
     WordLevel(
