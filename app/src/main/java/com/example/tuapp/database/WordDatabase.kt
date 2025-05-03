@@ -71,7 +71,7 @@ abstract class WordDatabase : RoomDatabase() {
         private suspend fun populateDatabase(wordDao: WordDao) {
             withContext(Dispatchers.IO) {
                 try {
-                    // Verificar si ya hay datos
+                    // Verifica si ya hay datos
                     val count = wordDao.getWordCount()
                     if (count > 0) {
                         Log.d(TAG, "populateDatabase: Ya hay $count palabras en la base de datos")

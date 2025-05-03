@@ -7,7 +7,9 @@ import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.tuapp.R
 import com.example.tuapp.database.WordDatabase
+import com.tuapp.ui.fourwordsoneimage.ImageWordOption
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

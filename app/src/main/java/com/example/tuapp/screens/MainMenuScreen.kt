@@ -22,6 +22,8 @@ import androidx.compose.ui.window.Dialog
 import androidx.navigation.NavController
 import com.example.tuapp.R
 
+
+
 @Composable
 fun CreditsDialog(onDismiss: () -> Unit) {
     Dialog(onDismissRequest = onDismiss) {

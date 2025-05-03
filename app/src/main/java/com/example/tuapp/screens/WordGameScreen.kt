@@ -469,7 +469,7 @@ fun ImageDialog(word: String, onDismiss: () -> Unit) {
 }
 
 
-//testeo
+//testeo quitar acento y ñ
 fun normalizeString(input: String): String {
     val normalized = Normalizer.normalize(input, Normalizer.Form.NFD)
     return normalized.replace("[^\\p{ASCII}]".toRegex(), "")
